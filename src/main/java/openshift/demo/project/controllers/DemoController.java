@@ -11,4 +11,9 @@ public class DemoController {
 	{
 		return "Hello from the other side!";
 	}
+	@GetMapping(value = "/bye")
+	public String printBye()
+	{
+		return "Good bye from the other side!";
+	}
 }
