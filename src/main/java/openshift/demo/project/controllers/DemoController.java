@@ -6,6 +6,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
 
+	
+
+	@GetMapping(value = "/")
+	public String printH()
+	{
+		return "Ready!";
+	}
+	
 	@GetMapping(value = "/hello")
 	public String printHello()
 	{
